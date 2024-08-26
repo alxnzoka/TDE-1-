@@ -58,8 +58,6 @@ def realizar_operacoes(arquivo):
 
     return resultados
 
-
-# Função principal que lê o arquivo e exibe os resultados
 def main():
     arquivo_teste = "teste1.txt"
     resultados = realizar_operacoes("teste1.txt")
@@ -68,6 +66,5 @@ def main():
         print(resultado)
 
 
-# Chamar a função principal
 if __name__ == "__main__":
     main()
