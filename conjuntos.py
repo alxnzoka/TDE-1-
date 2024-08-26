@@ -39,19 +39,19 @@ def realizar_operacoes(arquivo):
 
         if operacao == 'U':
             resultado = conjunto1.union(conjunto2)
-            descricao = f"UNIÃO: CONJUNTO 1 {conjunto1}, CONJUNTO 2 {conjunto2}. RESULTADO: {resultado}"
+            descricao = f"UNIÃO: CONJUNTO 1 - {conjunto1}, CONJUNTO 2 - {conjunto2}. RESULTADO: {resultado}"
 
         elif operacao == 'I':
             resultado = conjunto1.intersection(conjunto2)
-            descricao = f"INTERSECÇÃO: CONJUNTO 1 {conjunto1}, CONJUNTO 2 {conjunto2}. RESULTADO: {resultado}"
+            descricao = f"INTERSECÇÃO: CONJUNTO 1 - {conjunto1}, CONJUNTO 2 - {conjunto2}. RESULTADO: {resultado}"
 
         elif operacao == 'D':
             resultado = conjunto1.difference(conjunto2)
-            descricao = f"DIFERENÇA: CONJUNTO 1 {conjunto1}, CONJUNTO 2 {conjunto2}. RESULTADO: {resultado}"
+            descricao = f"DIFERENÇA: CONJUNTO 1 - {conjunto1}, CONJUNTO 2 - {conjunto2}. RESULTADO: {resultado}"
 
         elif operacao == 'C':
             resultado = {(x, y) for x in conjunto1 for y in conjunto2}
-            descricao = f"PRODUTO CARTESIANO: CONJUNTO 1 {conjunto1}, CONJUNTO 2 {conjunto2}. RESULTADO: {resultado}"
+            descricao = f"PRODUTO CARTESIANO: CONJUNTO 1 - {conjunto1}, CONJUNTO 2 - {conjunto2}. RESULTADO: {resultado}"
 
         resultados.append(descricao)
         linha_atual += 3
